@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* Basic Reset */
+* {
+    margin: 0;
+    font-family: 'Arial';
+    font-weight: normal;
+}
+
+body, h3, h4, h5, label, p {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8E83FF; 
+    padding: 15px 0px;
+    color: white;
+}
+
+nav {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a, #joesstocks{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 15px;
+}
+
+#searchStocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically if needed */
+    width: 100%; /* Set width to 100% of the parent */
+    max-width: 600px; /* Maximum width can be the same as the search box for tight wrapping */
+    margin-left: auto; /* Auto margins for horizontal centering */
+    margin-right: auto;
+    margin-top: 200px;
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Search Box Container */
+#searchBox {
+    display: flex;
+    align-items: center;
+    border: 2px solid #8E83FF; /* Border color */
+    border-radius: 5px;
+    overflow: hidden; /* Ensures that children elements don't overflow the rounded corners */
+    width: 600px; /* Width of the whole search box */
+}
+
+/* Search Box Input Field */
+#searchInput {
+    flex-grow: 1; /* Allows the input to take up available space */
+    border: none; /* No border for the input */
+    padding: 10px; /* Padding inside the input for better text visibility */
+    font-size: 15px; /* Font size for the placeholder/entered text */
+    outline: none; /* Removes the outline on focus */
+    margin-right: 4px; /* Pulls the button closer to cover the input's border */
+}
+
+/* Search Button */
+#searchButton {
+    background-color: #8E83FF; /* Background color for the button */
+    border: none; /* No border for the button to blend with the input field */
+    color: white; /* Text/icon color */
+    cursor: pointer; /* Cursor for the button */
+    padding: 15px; /* Padding inside the button */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.user #quantityContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center; /* Aligns items vertically in the center */
+	gap: 10px; /* Adds space between label, input, and button */
+	width: auto;
+}
+
+.user #searchResults{
+	padding: 30px 50px;
+    margin-top: 20px; /* Adjust as per design */
+    background-color: white;
+    margin: 0px 20px;
+}
+
+#searchResults {
+	display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    align-items: center;
+    background-color: white; 
+    color: black;
+	border-radius: 10px;
+	padding: 20px;
+} 
+
+.user #stock {
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.user #companyTicker {
+	text-align: left;
+    font-size: 20px;
+}
+
+.user #companyDetails {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+.guest #companyTicker {
+	text-align: center;
+    font-size: 20px;
+}
+
+.user #companyName, .user #companyExchange, .user #companyTicker {
+	text-align: left;
+    margin-bottom: 8px;
+}
+
+.user #quantityInput {
+	flex-grow: 0; /* Prevents the input from growing */
+	width: 30px; /* Allows the input to size according to its content */
+	margin: 0; /* Removes any default margin */
+	padding: 5px 10px; /* Pads the inside of the input */
+	font-size: 12px; /* Sets the font size for the input */
+}
+
+.user #stockSummary {
+	text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.guest #companyName, .guest #companyExchange, .guest #stockSummary {
+	text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.user #marketTitle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.user #stockDetails {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	color: #377824;
+	font-size: 25px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.user #changeContainer {
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	width: 100%;
+}
+
+.user #lastPrice {
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.user #currentTimestamp {
+	font-size: 15px;
+	color: #377824;
+}
+
+.user #buyButton {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #3e8555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.guest #stockSummary p {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.user #stockSummary p {
+	text-align: center;
+	padding: 1px;
+	font-weight: bold;
+}
+
+#summaryTitle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.user #marketTitle {
+	margin-bottom: 20px;
+	text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+h6 {
+	text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#companyInfo p {
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px;
+	text-align: left;
+}
+
+
+

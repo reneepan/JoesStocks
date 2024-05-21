@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JoesStocks - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="joesstocks">JoesStocks</a>
+        <nav>
+            <a href="index.html">Home / Search</a>
+            <a href="login.html">Login / Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form">
+            <div id="login">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" onclick="submitLogin();">Submit</button>
+                </form>
+            </div>
+
+            <div id="signup">
+                <h2>Sign Up</h2>
+                <form id="signupForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="newEmail" name="newEmail" required>
+                    <label for="newUsername">Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                    <label for="newPassword">Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="button" onclick="submitSignup();">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    font-family: 'Arial';
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8E83FF; 
+    padding: 15px 0px;
+    color: white;
+}
+
+nav {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a, #joesstocks{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 15px;
+}
+
+main {
+	margin: 0 200px;
+}
+
+h1 {
+	padding: 5px;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+#portfolioOverview p {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.stock-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.stock-header {
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.stock-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.stock-info, .stock-transaction {
+	flex: 1;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.stock-transaction {
+    align-self: center;
+}
+
+.transaction-form {
+	display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.transaction-form label {
+    margin-right: 5px;
+}
+
+.transaction-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.transaction-form .submit-button {
+    margin-left: 10px;
+}
+
+.quantity-input {
+    padding: 5px 10px;
+    margin: 0 5px;
+    max-width: 40px;
+}
+
+.quantity-input, .radioButtons, .submit-button {
+	margin-bottom: 5px;
+}
+
+.transaction-form .radio-buttons label {
+    margin-bottom: 10px; /* Spacing between radio buttons and submit button */
+}
+
+

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    font-family: 'Arial';
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8E83FF; 
+    padding: 15px 0px;
+    color: white;
+}
+
+nav {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a, #joesstocks{
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 15px;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    color: #808080;
+    justify-content: center;
+    margin-top: 50px auto;
+    align-items: flex-start;
+}
+
+h2 {
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+form label {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+#login, #signup {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    margin-bottom: 20px; /* Consistent margin for inputs and button */
+    width: 100%; /* Full width of parent */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+form button {
+    background-color: #74140c; /* Match button color to your theme */
+    color: white;
+    cursor: pointer;
+}
+

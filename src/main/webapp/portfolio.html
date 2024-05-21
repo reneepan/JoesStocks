@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JoesStocks - Portfolio</title>
+	<link rel="stylesheet" href="portfolio.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+        <a href="index.html" id="joesstocks">JoesStocks</a>
+        <nav>
+            <a href="index.html">Home / Search</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#" onclick="logout();">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h1>My Portfolio</h1>
+        <div id="portfolioOverview">
+            <p>Cash Balance: $<span id="cashBalance"></span></p>
+            <p>Total Account Value: $<span id="totalValue"></span></p>
+        </div>
+        <div id="portfolioDetails"></div>
+    </main>
+    <script src="portfolio.js"></script>
+</body>
+</html>

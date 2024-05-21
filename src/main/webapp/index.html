@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JoesStocks</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+    <header>
+        <a href="index.html" id="joesstocks">JoesStocks</a>
+        <nav>
+            <a href="index.html">Home / Search</a>
+            <a href="login.html" class="guest">Login / Sign Up</a>
+            <a href="portfolio.html" class="user" style="display: none;">Portfolio</a>
+            <a href="#" onclick="logout();" class="user" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    <main>
+    	<div id="searchStocks" style="display: block"> 
+	    	<h2>SEARCH STOCKS</h2>
+	    	<form id="searchForm" onsubmit="event.preventDefault(); parseFinnHub();">
+	    		<div id="searchBox">
+	    			<input type="text" placeholder="Search by ticker..." id="searchInput">
+	    			<button type="submit" id="searchButton"><i class = "fa fa-search"></i> </button>
+	    		</div>
+	    	</form>	
+    	</div>
+    	<div id="searchResults" style="display: none;">
+    		<div id="stock">
+    			<div id="companyDetails">
+	    			<h3 id="companyTicker">-</h3>
+		    		<h4 id="companyName">-</h4>
+		    		<h5 id="companyExchange">-</h5>
+		    		<div id="quantityContainer" class="user">
+		    			<label for="quantityInput" class="user">Quantity:</label>
+			    		<input type="number" id="quantityInput" class="user" min = "1">
+		    		</div>
+		    		<button type="button" id="buyButton" class="user" onclick="buyStock();">Buy</button>
+	    		</div>
+	    		<div id="stockDetails" class="user stockDetails" style="display:none;">
+	    			<p id="lastPrice">-</p>
+	    			<div id="changeContainer">
+	    				<p id = "changeArrow"><i class = "fa ${arrowClass}"></i></p>
+	    				<p id = "change"></p>
+	    				<p>(<span id="changePercent"></span>%)</p>
+	    			</div>
+	    			<p id="currentTimestamp"></p>
+	    		</div>
+    		</div>
+    		
+    		<p class="user" id="marketTitle" style="display: none;">Market is <span id="market">-</span></p>
+    		<p id="summaryTitle">Summary</p>
+    		<hr>
+    			<div id="stockSummary">
+    				<p>High Price: <span id="highPrice">-</span></p>
+    				<p>Low Price: <span id="lowPrice">-</span></p>
+    				<p>Open Price: <span id="openPrice">-</span></p>
+    				<p>Close Price: <span id="closePrice">-</span></p>
+    			</div>
+    		<hr>
+    		<h6>Company Information <span id="companyTitle"></span></h6>
+    			<div id="companyInfo">
+    				<p>IPO Date: <span id="ipoDate">-</span></p>
+    				<p>Market Cap ($M): <span id="marketCap">-</span></p>
+    				<p>Shares Outstanding: <span id="sharesOutstanding">-</span></p>
+    				<p>Website: <span id="companyWebsite">-</span></p>
+    				<p>Phone: <span id="companyPhone">-</span></p>
+    			</div>
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
+
